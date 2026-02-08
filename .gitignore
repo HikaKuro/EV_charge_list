@@ -1,0 +1,14 @@
+# データベース・CSV（GitHubに乗せない）
+DB/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv/
+venv/
+
+# その他
+*.log
+.DS_Store

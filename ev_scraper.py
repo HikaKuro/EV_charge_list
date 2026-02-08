@@ -429,7 +429,10 @@ def main():
         # CSVに出力
         print("\n【CSVファイルに出力中】")
         df = pd.DataFrame(detailed_data)
-        output_file = 'ev_status_list.csv'
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        db_dir = os.path.join(script_dir, 'DB')
+        os.makedirs(db_dir, exist_ok=True)
+        output_file = os.path.join(db_dir, 'ev_status_list.csv')
         df.to_csv(output_file, index=False, encoding='utf-8-sig')
         print(f"CSV: {output_file} に {len(detailed_data)}件のデータを保存しました。")
         

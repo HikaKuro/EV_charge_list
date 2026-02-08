@@ -49,7 +49,7 @@ python ev_scraper.py
 1. 故障情報一覧ページから施設情報を取得
 2. メンテナンス情報一覧ページから施設情報を取得
 3. 各施設の詳細ページにアクセスして追加情報を取得
-4. すべての情報を統合して `ev_status_list.csv` と `public/data.json` に出力
+4. すべての情報を統合して `DB/ev_status_list.csv` と `ev-charger-dashboard/public/data.json` に出力
 
 ### 方法2: Reactダッシュボードから実行（推奨）
 
@@ -87,7 +87,7 @@ npm run dev
 ## 出力ファイル
 
 ### CSV形式
-`ev_status_list.csv` に以下のカラムでデータが保存されます：
+`DB/ev_status_list.csv` に以下のカラムでデータが保存されます：
 
 - 更新日
 - 施設名
